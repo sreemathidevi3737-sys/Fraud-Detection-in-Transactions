@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraud Detection Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            text-align: center;
+            width: 320px;
+            max-width: 85%;
+            box-shadow: 0 8px 25px #33333340;
+        }
+        h1 { color: #49358a; }
+        .result {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+        a {
+            display: inline-block;
+            background: #6654d9;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Detection Result</h1>
+        <p>Transaction row: {{ row_number }}</p>
+        <div class="result">{{ result }}</div>
+        <a href="/">Check Another Transaction</a>
+        <p><small>Model prediction only. Not a guarantee of fraud.</small></p>
+    </div>
+</body>
+</html>
