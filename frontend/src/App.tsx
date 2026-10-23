@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const API_BASE = 'http://127.0.0.1:5000/api';
+const API_BASE = 'https://fraud-detection-in-transactions-mm33.onrender.com';
 
 interface SampleItem {
   id: number;
